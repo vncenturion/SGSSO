@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SGSSO - CADASTRO DE FUNCIONARIO</title>
+        <link href="../styles.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body>
+
+        <div id="conteudo">
+
+            <div id="header">
+
+                <div id="header-logo">
+                    
+                    <h1>CADASTRO DE FUNCIONÁRIO</h1>
+        
+                </div>
+                
+                <div id="header-menu">
+
+                    <p><a href="cadastro.html">Cadastro de funcionário</a> | <a href="terceirizado.html">Cadastro de terceirizado</a> | <a href="colaboradores.html">Colaboradores</a> | <a href="../index.html">Página Inicial</a></a></p>
+            
+                </div>
+
+            </div>
+
+            <div id="main">
+
+                <h3>Orientações de preenchimento</h3>
+
+                <p>A ficha de cadastro de funcionário deve ser preenchida pelo Técnico de Segurança do Trabalho responsável pela obra juntamente com o funcionário a ser cadastrado.</p>
+
+                <p>A documentação deve ser digitalizada em arquivo *.pdf único. O nome o arquivo deve ser os dois primeiros nomes do funcionário.</p>
+                
+                <div class="formularioCadastro">
+                        
+                    <form action="cadastro_enviado.html" method="POST">
+                        <fieldset>
+                            <legend>FICHA DE CADASTRO DE FUNCIONÁRIO</legend>
+                    
+                            <label for="nome">Nome completo:</label><br>
+                            <input type="text" name="nomeFunc" id="nome" required>  
+                            <br>
+                    
+                            <label>Sexo:</label>
+                            <input type="radio" name="sexo" value="masculino" id="masculino" checked>
+                            <label for="masculino">masculino</label>
+                            <input type="radio" name="sexo" value="feminino" id="feminino">
+                            <label for="feminino">feminino</label>
+                            <br>
+
+                            <label for="nascimento">Data de nascimento:</label><br>
+                            <input type="date" name="date" id="nascimento" required>
+                            <br>
+
+                            <label for="cpf">CPF (apenas números):</label><br>
+                            <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" required>
+                            <br>
+                    
+                            <label for="pis">PIS (apenas números):</label><br>
+                            <input type="text" name="pis" id="pis" placeholder="000.00000.00-0" required>
+                            <br>
+                    
+                            <label for="n_telefone">Telefone (incluir código de área):</label><br>
+                            <input type="text" name="n_telefone" id="n_telefone" placeholder="(00) 00000-00000" required>
+                            <br>
+                    
+                            <label for="cargo">Cargo:</label><br>
+                            <select id="cargo" name="cargo" required>
+                                <option value="0"></option>
+                                <option value="servente">Servente</option>
+                                <option value="pedreiro">Pedreiro</option>
+                                <option value="carpinteiro">Carpinteiro</option>
+                                <option value="armador">Armador</option>
+                                <option value="estagiario">Estagiário</option>
+                                <option value="auxiliar">Auxiliar administrativo</option>
+                                <option value="tecnico_ed">Técnico de Edificações</option>
+                                <option value="tecnico_seg">Técnico de Segurança</option>
+                                <option value="engenheiro">Engenheiro Civil</option>
+                            </select>
+                            <br>
+                    
+                            <label for="calcado">Calçado:</label><br>
+                            <select id="calcado" name="tamCalcado" required>
+                                <option value="0"></option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="43">44</option>
+                            </select>
+                            <br>
+
+                            <label for="camiseta">Camiseta:</label><br>
+                            <select id="camiseta" name="tamCamiseta" required>
+                                <option value="0"></option>
+                                <option value="p">P</option>
+                                <option value="m">M</option>
+                                <option value="g">G</option>
+                                <option value="gg">GG</option>
+                                <option value="xxl">XXL</option>
+                            </select>
+                            <br>
+
+                            <label for="calca">Calça:</label><br>
+                            <select id="calca" name="tamCalca" required>
+                                <option value="0"></option>
+                                <option value="p">P</option>
+                                <option value="m">M</option>
+                                <option value="g">G</option>
+                                <option value="gg">GG</option>
+                                <option value="xxl">XXL</option>
+                            </select>
+                            <br>
+                        
+                            <label for="">Condição de saúde:</label><br>
+                            <input type="checkbox" name="cond_saude" value="alergico" id="alergico">
+                            <label for="alergico">Alergias</label>
+                            <input type="checkbox" name="cond_saude" value="cardiopatia" id="cardiopatia">
+                            <label for="cardiopatia">Cardiopatias</label>
+                            <input type="checkbox" name="cond_saude" value="diabetes" id="diabetes">
+                            <label for="diabetes">Diabetes</label>
+                            <input type="checkbox" name="cond_saude" value="hipertenso" id="hipertenso">
+                            <label for="hipertenso">Hipertensão</label>
+                            <input type="checkbox" name="cond_saude" value="cirurgia" id="cirurgia">
+                            <label for="cirurgia">Cirurgia anterior</label>
+                            <input type="checkbox" name="cond_saude" value="tabagismo" id="tabagismo">
+                            <label for="tabagismo">Tabagismo</label>
+                            <input type="checkbox" name="cond_saude" value="etilismo" id="etilismo">
+                            <label for="etilismo">Etilismo</label>
+                    
+                            <p>Contato em caso de emergência:<br>    
+                            <label for="nome_emergencia">Nome:</label><br>
+                            <input type="text" name="nome_emergencia" id="nome_emergencia">  
+                            <br>
+                            <label for="num_emergencia">Número (incluir código de área):</label><br>
+                            <input type="text" name="num_emergencia" id="num_emergencia" placeholder="(00) 00000-0000"></p>
+                    
+                            <p>Anexar documentos:</label><br>
+                            <input type="file" name="file" id="doc_func" accept=".pdf"></p>
+                        </fieldset>
+                        <br>
+                        
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Apagar">
+
+                
+                    </form>
+                    
+                </div>  
+
+            </div>
+
+            
+            <div id="footer">
+
+                <div id="footer-menu">
+
+                    <p><a href="">O Empreendimento</a> | <a href="">Redes Sociais</a> | <a href="">Contato</a> | <a href="http://sesmt.mte.gov.br/" target="_blank">Sistema SESMT</a></p>
+                    <!-- apenas o campo de acesso ao sistema SESMT do governo está ativo. Os campos "o empreendimento" encaminhará para a página comercial do empreendimento, "redes sociais" para as redes sociais (instagram e facebook da construtora), e "contato" para envio de email de contato para construtora, engenheiro responsavel pela execução ou responsavel pela segurança -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

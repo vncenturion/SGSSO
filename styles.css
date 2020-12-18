@@ -1,0 +1,148 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    background-color: green;
+    color: white;
+    font-family: ;
+}
+
+#header a:link, #header a:visited, #header a:active {
+    text-decoration:none;
+    color: white;
+}
+
+#header a:hover {
+	text-decoration: underline; 
+	color: white
+}
+
+#header-logo {
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+
+
+#header-logo p {
+    margin: 0px;
+    font-size: 12px;
+}
+
+#header-logo h1 {
+    margin: 0px;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#header-logo h2 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+#header-menu {
+    background-color: darkgreen;
+    padding-left: 10%;
+    font-size: 12px;
+}
+
+#header-menu p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0%;
+}
+
+div#main {
+    margin: auto;
+    padding-top: ;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 30px;
+    text-align: justify
+}
+
+div.caixaCadastro {
+    overflow-y: auto;
+    width: 90%;
+    height: 450px;
+    border-radius: 15px 0px 0px 15px;
+    border: 1px solid #6e6e6e;
+    background-color: #dafacd;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.quadroTabela {
+    width: 90%;
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid #6e6e6e;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formularioCadastro {
+    padding-top: 30px;
+}
+
+div fieldset {
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid #6e6e6e;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div form {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+dl {
+    padding: 5%;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 25%;
+    padding-right: 25%;
+    max-width:50%;
+    max-height: 200px;
+}
+
+#footer {
+    background-color: darkgreen;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 15px;
+    font-family: ;
+    color: white;
+}
+
+#footer a:link, #footer a:visited, #footer a:active {
+    text-decoration:none;
+    color: white;
+}
+
+#footer a:hover {
+	text-decoration: underline; 
+	color: white
+}
+
+#footer-menu p {
+    padding-top: 5px;
+    font-size: 12px;
+}
